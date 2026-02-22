@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BASIC MATHEMATICS CALCULATOR </title>
+  
+  <link rel="stylesheet" href="calculator.css">
+  
+</head>
+
+<body>
+  
+  <div class="calculatorBorder">
+  <div>
+    <p class="js-show-calculation display"></p>
+  </div>
+  <div>
+  	<p>
+  		<button onclick="
+  			calculateInput(' + ') 
+  		">
+  			+
+  		</button>
+  		<button onclick="
+  			calculateInput('1') 
+  			">
+  			1
+  		</button>
+  		<button onclick="
+  			calculateInput('2') 
+  			">
+  			2
+  		</button>
+  		<button onclick="
+  			calculateInput('3') 
+  			">
+  			3
+  		</button>
+  	</p>
+  </div>
+  
+    <div>
+  	<p>
+  		<button onclick="
+  			calculateInput(' - ') 
+  			">
+  			-
+  		</button>
+  		<button onclick="
+  			calculateInput('4') 
+  			">
+  			4
+  		</button>
+  		<button onclick="
+  			calculateInput('5') 
+  			">
+  			5
+  		</button>
+  		<button onclick="
+  			calculateInput('6') 
+  			">
+  			6
+  		</button>
+  	</p>
+  </div>
+  
+    <div>
+  	<p>
+  		<button onclick="
+  			calculateInput(' * ') 
+  			">
+  			×
+  		</button>
+  		<button onclick="
+  			calculateInput('7') 
+  			">
+  			7
+  		</button>
+  		<button onclick="
+  			calculateInput('8') 
+  			">
+  			8
+  		</button>
+  		<button onclick="
+  			calculateInput('9') 
+  			">
+  			9
+  		</button>
+  	</p>
+  </div>
+  
+    <div>
+  	<p>
+  		<button onclick="
+  			calculateInput(' / ') 
+  			">
+  			÷
+  		</button>
+  		<button onclick="
+  			calculateInput('.') 
+  			"> 			
+  			.
+  		</button>
+  		<button onclick="
+  			calculateInput('0') 
+  			">
+  			0
+  		</button>
+  		<button onclick="
+  			calculation = eval(calculation) || 0 ;
+  			localStorage.setItem('result', JSON.stringify(calculation)) ;
+  			
+  			displayResult()
+  		">
+  			=
+  		</button>
+  	</p>
+  </div>
+  
+  <div class="clearCalculation">
+    <button onclick="
+      clearCalculation()
+    ">
+      Clear
+    </button>
+  </div>
+  
+  
+  <script src="calculator.js" type="text/javascript" charset="utf-8"></script>
+    
+  </script>
+</body>
+
+</html>
